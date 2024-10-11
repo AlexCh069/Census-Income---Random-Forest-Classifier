@@ -23,9 +23,17 @@ El modelo de clasificación seleccionado es el **Random Forest Classifier**, con
 
 ## RESULTADOS
 
-Se entrenaron seis modelos, los cuales cuentan con diferentes caracteristicas y resultados. Esto con la finalidad de darle un mejor manejo al tema del desbalanceo de datos, ademas de que se evito el uso de 2 variables resultaron poco relevantes desde el primer entrenamiento de datos ('native_country' y 'race'), REVISAR: ademas de que eticamente pueden incurrir en temas de clasismo. 
+Se entrenaron seis modelos, los cuales cuentan con diferentes caracteristicas y resultados. Esto con la finalidad de darle un mejor manejo al tema del desbalanceo de datos, ademas de que se evito el uso de 2 variables resultaron poco relevantes desde el primer entrenamiento de datos ('native_country' y 'race').
 
 Las conclusiones exactas de cada modelo entrenado se pueden revisar en el notebook de cada uno, aqui se mostrara una vision superficial sobre realizado y obtenido.
+
+> **CONCLUSIONES GENERALS**
+
+- Los mejores resultados fueron obtenidos por el **MODELO 1** y el **MODELO 6**.
+- La tecnica que brindo mejores resultados (en este caso) para la identificacion de la clase minoritaria fue sobremuestreando datos referentes a esta
+- Sacar conclusiones solo con metricas obtenidas de los datos de testeo puede sesgar nuestro entendimiento del modelo, ya que no brinda un panorama general, pues al ser ser 'random forest' un modelo que genera muchos arboles de decision, no hay inconvenientes en usar datos repetidos para su analisis. 
+
+
 
 ### - **MODELO 1**: 
 
@@ -129,13 +137,6 @@ De momento podemos ver una fuerte capacidad de prediccion para ambas clases. Aho
 ![alt text](image-15.png)
 
 Si bien se optuvo mejoras considerables al momento de predecir la clase minoritaria, tambien se perdio capacidad para la identificacion de la clase mayoritaria lo cual se refleja en los FP, sim embargo podria considerse como un intercambio justo, quedando a criterio de cual sea el uso del modelo.
-
-
-## CONCLUSIONES FINALES
-
-- Los mejores resultados fueron obtenidos por el **MODELO 1** y el **MODELO 6**.
-- La tecnica que brindo mejores resultados (en este caso) para la identificacion de la clase minoritaria fue sobremuestreando datos referentes a esta
-- Sacar conclusiones solo con metricas obtenidas de los datos de testeo puede sesgar nuestro entendimiento del modelo, ya que no brinda un panorama general, pues al ser ser 'random forest' un modelo que genera muchos arboles de decision, no hay inconvenientes en usar datos repetidos para su analisis. 
 
 
 
